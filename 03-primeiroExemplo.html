@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<title>Hello World</title>
+	</head>
+	
+	<body bgcolor="ff00ff">
+	<style> 
+h1{
+    margin: 1px;
+}
+fieldset{
+    border: 1; 
+    margin: 0 auto;
+}
+body input, select, textarea, button{
+    font-family: arial;
+    font-size: 1em;
+}
+.campo{
+    margin-bottom: 1em;
+}
+.campo label{
+    margin-bottom: 0.2em;
+    color: #666;
+    display: block;
+    font-family: arial;
+}
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+
+    }
+.campo input{
+    padding: 0.2em;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+.campo select option{
+    padding-left: 1em;
+}
+.campo input.focus, .campo select:focus, .campo textarea:focus{
+    background: #FFC;
+}
+.campo label{
+    color: #000;
+    display: inline-block;
+    margin-right: 1em;
+}
+botao{
+    font-size: 1.5em;
+    background: #f90;
+    border: 0;
+    margin-bottom: 1em;
+    color: #fff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba( 0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.botao:hover{
+    background: #fb0;
+    box-shadow: inset 2px 2px 2px rgba( 0, 0, 0, 0.2);
+    text-shadow: none;
+}
+.botao, select{
+    cursor: pointer;
+}
+</style>
+<form id="cadveiculo" method="post" action="">
+            <fieldset>
+                <legend>Cadastro de Veículo</legend>
+                <fieldset>
+                    <div class="grupo">
+                        <div class="campo">
+                            <label form="codigo">Código</label>
+                            <input type="text" id="codigo" name="codigo" />
+                        </div>
+                        <div class="campo">  
+                            <label for="placa">Nº Placa</label>
+                            <input type="text" id="placa" name="placa" />
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label>Ano Fabricação</label>
+                    <input type="text" id="fabricacao" name="fabricacao" />
+                </div>
+                    <div class="campo">
+                        <label>Marca</label>
+                        <select id="selMarca" class="campo">
+                                <option value=""></option>
+                                <option value="f">FIAT</option>
+                                <option value="vw">VOLSKWAGEN</option>
+                                <option value="ch">CHEVROLET</option>
+                                <option value="fo">FORD</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Modelo</label>
+                        <input type="text" id="marca" name="marca" />
+                    </div>
+                    <div class="campo"> 
+                        <label>Porta</label>
+                        <input type="text" id="porta" name="porta" />
+                    </div>
+                    <div class="campo">
+                        <label>Combustível</label>
+                        <select id="selComb">
+                                <option value=""></option>
+                                <option value="a">ALCOOL</option>
+                                <option value="D">DIESEL</option>
+                                <option value="g">GASOLINA</option>
+                                <option value="f">FLEX</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>KM</label> 
+                        <input type="text" id="km" name="km" />
+                    </div>
+                    <div class="campo">
+                        <label>Cor</label>
+                        <input type="text" id="cor" name="cor" />
+                    </div>
+                    <div class="campo">
+                        <label>Categoria</label>
+                        <select id="selCategoria">
+                                <option value=""></option>
+                                <option value="b">BASICO</option>
+                                <option value="bo">BASICO C/ OPCIONAIS</option>
+                                <option value="i">INTERMEDIÁRIO</option>
+                                <option value="io">INTERMEDIÁRIO C/ OPCI0NAIS</option>
+                                <option value="p">PREMIUM</option>
+                                <option value="po">PREMIUM C/ OPCIONAIS</option>
+                                <option value="u">UTILITÁRIOS</option>
+                            </select>
+                    </div>
+                    <div class="campo">
+                        <label>Data Aquisição</label>
+                        <input type="date" />
+                    </div>
+                    <div class="campo">
+                        <label>Valor Locação</label>
+                        <input type="text" id="valor" name="valor" />
+                    </div>
+                </fieldset>
+                <button class="botao" type="submit" name="submit">Salvar</button>
+            </fieldset>
+        </form
+	<body>
+</html>

@@ -1,0 +1,68 @@
+		/* definição por elemento */
+		
+			body {
+			color: #ffffff;
+			font-size: 15px;
+			padding: 0px;
+			margin: 0px;
+				}
+			
+			p {
+				border: 1px solid #ffffff;
+				margin: 10px;
+				padding: 10px;
+			}
+			
+			/* Definição por ID do elemento */
+			#teste{
+				background: green;
+				color: pink;
+				text-align: center;
+				border: 3px solid red;
+			
+				}
+		
+			/* Usando Classes nos elementos */
+			
+			.p_paragrafoinicial{
+			
+				font-size: 15 px;
+				font-style: italic;
+			}
+			
+			.fundoAzul{
+				background-color: blue;
+			}
+			
+			
+		/* Css aula 37 */
+		.divMargemInferior {
+			padding: 20px;
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #ffffff;
+		}
+		
+		.divColunaEsquerda{
+			width: 50%;
+			float: left;
+		}
+		.divColunaDireita{
+			width: 50%;
+			float: right;
+			
+		}
+		.divColunaCentral{
+			width: 100%;
+			border-top: 1px solid #000000;
+			float: left;
+			
+		}
+		.divGeral {
+			width: 940px;
+			background: red;
+			margin-left: auto;
+			margin-right: auto;
+			display: table;
+			
+		}
